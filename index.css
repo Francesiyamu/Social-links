@@ -10,36 +10,36 @@
 
 body{
     font-family: 'Inter', sans-serif;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    text-align: center;
     height: 100vh;
     background-color: hsl(0, 0%, 8%);
     color: hsl(0, 0%, 100%);
-    margin: 0 auto;
     width: 100%;
-    height: 100%;
-    max-width: 1440px;
-    max-height: 960px;
+    
 }
 
 
 main{
-    margin: 3rem auto 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
     width: 100%;
-    height: 100%;
+    height: auto;
     max-width: 582px;
-    max-height: 928px;  
     background-color: hsl(0, 0%, 12%);
     box-shadow: 0 0 10px hsl(0, 0%, 30%);
+    margin: 24px auto;
+    padding: 24px;
 }
 
-.image{
+.profile-image{
     width: 133px;
     height: 133px;
     display: flex;
@@ -49,7 +49,7 @@ main{
     margin-top: 3rem;
 }
 
-.image img{
+.profile-image img{
     width: 100%;
     height: 100%;
     border-radius: 50%;
@@ -59,8 +59,6 @@ main{
 
 
 .profile-info{
-    max-width: 461px;
-    max-height: 93.07px;
     margin: 10px 0 ;
     line-height: 2rem;
     text-align: center;
@@ -77,6 +75,7 @@ main{
     font-weight: 500;
     text-align: center;
     opacity: 0.7;
+    margin-bottom: 15px;
 }
 
 .social-links nav{
@@ -96,20 +95,20 @@ ul li a{
     display: block;   
     width: 100%;
     box-sizing: border-box;
-}
-
-ul li a, 
-ul li a:visited{
     text-decoration: none;
-    color: #fff;;
+    color: #fff;
     font-size: 14px;
     font-weight: 500;
     background-color: hsl(0, 0%, 20%);
     margin: 1rem 0;
     padding: 0.1rem 4rem;
     text-align: center;
+    transition: background-color 0.3s ease;
 }
 
+ul li a:visited{
+    color: #fff;
+}
 ul li a:hover{
     background-color: hsl(75, 94%, 57%);
 }
@@ -119,41 +118,25 @@ footer { font-size: 11px; text-align: center; }
 footer a { color: hsl(228, 45%, 44%); }
 
 
-@media screen and (min-width:768px){
-    body{
-        width: 100%;
-        height: 100%;
-        max-width: 768px;
-        max-height: 1024px;
-    }
+/* Media query for screens ≥ 375px */
+@media screen and (min-width:375px){
+    
 
+    main{
+        max-width: 327px;
+       padding: 24px;
+    }
+} 
+
+
+/* Media query for screens ≥ 768px */
+
+@media screen and (min-width:768px){
     main {
-        width: 100%;
         max-width: 384px;
-        max-height: 611px;
-        padding: 40px 40px;
-        margin: 8px auto;
+        padding: 40px;
     }
 
     
 }
 
-
-@media screen and (min-width:375px){
-body{
-    width: 100%;
-    height: 100%;
-    max-width: 375px;
-    max-height: 812px;
-    padding: 0 24px;
-    margin: 0 24px;
-}
-
-main{
-    width: 100%;
-    max-width: 327px;
-    max-height: 579px;
-    padding: 24px 24px;
-    margin: 24px auto;
-}
-}

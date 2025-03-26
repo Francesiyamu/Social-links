@@ -1,14 +1,142 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    background-color: hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 100%);
+    width: 100%;
+    
+}
 
 
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    max-width: 582px;
+    background-color: hsl(0, 0%, 12%);
+    box-shadow: 0 0 10px hsl(0, 0%, 30%);
+    margin: 24px auto;
+    padding: 24px;
+}
+
+.profile-image{
+    width: 133px;
+    height: 133px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.profile-image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: block;
+    object-fit: cover;
+}
 
 
+.profile-info{
+    margin: 10px 0 ;
+    line-height: 2rem;
+    text-align: center;
+}
+
+.profile-info p{
+    font-size: 14px;
+    font-weight: 500;
+    color:  hsl(75, 94%, 57%);
+}
+
+.bio{
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    opacity: 0.7;
+    margin-bottom: 15px;
+}
+
+.social-links nav{
+    line-height: 3rem;
+    max-width: 461px;
+    max-height: 461px;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
 
 
+ul li a{
+    display: block;   
+    width: 100%;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: hsl(0, 0%, 20%);
+    margin: 1rem 0;
+    padding: 0.1rem 4rem;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+ul li a:visited{
+    color: #fff;
+}
+ul li a:hover{
+    background-color: hsl(75, 94%, 57%);
+}
 
 
+footer { font-size: 11px; text-align: center; }
+footer a { color: hsl(228, 45%, 44%); }
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+
+/* Media query for screens ≥ 375px */
+@media screen and (min-width:375px){
+    
+
+    main{
+        max-width: 327px;
+       padding: 24px;
+    }
+} 
+
+
+/* Media query for screens ≥ 768px */
+
+@media screen and (min-width:768px){
+    main {
+        max-width: 384px;
+        padding: 40px;
+    }
+
+    
+}
+
